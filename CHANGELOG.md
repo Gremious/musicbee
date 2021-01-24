@@ -12,3 +12,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 - Fix Upper/Pad snippet prefixes
 - Don't package unnecessary files
+  
+## [1.0.2]
+
+### Fixed
+
+- Images for VSCode extension *need* to have a http url to display, changed from relative path to raw url.
