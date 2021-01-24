@@ -4,19 +4,24 @@
 	"scopeName": "source.musicbee",
 	"patterns": [
 		{
-			"comment": "tag",
-			"name": "meta.musicbee",
-			"match": "<[\\w\\s]+>",
-			"captures": {
-				"0": {
-					"name": "support.function.musicbee"
-				}
-			}
+			"comment": "Tag",
+			"name": "variable.musicbee",
+			"match": "<[\\w\\s]+>"
 		},
 		{
-			"comment": "Variables",
-			"name": "variable.musicbee",
-			"match": "%[_a-zA-Z0-9:]*%"
+			"comment": "Function",
+			"name": "support.function.musicbee",
+			"match":"\\$(\\w+)(?=\\()"
+		},
+		{
+			"comment": "String",
+			"name": "string.quoted.musicbee",
+			"match":"\"(?:[^\"\\\\]|\\\\.)*\""
+		},
+		{
+			"comment": "Text",
+			"name": "keyword.musicbee",
+			"match":"(?<=\\(|, |,)[\\w\\s]+"
 		}
 	],
 	"repository": {
