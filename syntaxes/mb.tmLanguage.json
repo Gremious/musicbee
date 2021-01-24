@@ -4,9 +4,19 @@
 	"scopeName": "source.musicbee",
 	"patterns": [
 		{
+			"comment": "tag",
+			"name": "meta.musicbee",
+			"match": "<[\\w\\s]+>",
+			"captures": {
+				"0": {
+					"name": "support.function.musicbee"
+				}
+			}
+		},
+		{
 			"comment": "Variables",
 			"name": "variable.musicbee",
-			"match": "<[_a-zA-Z0-9:]*>"
+			"match": "%[_a-zA-Z0-9:]*%"
 		}
 	],
 	"repository": {

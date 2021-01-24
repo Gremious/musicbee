@@ -11,15 +11,19 @@
     ],
     "contributes": {
         "languages": [{
-            "id": "mb",
-            "aliases": ["MusicBee Formula", "mb", "MusicBee Tagger Script"],
-            "extensions": [".mbf"],
+            "id": "musicbee",
+            "aliases": ["musicbee", "musicbee formula", "mb", "musicbee tagger script"],
+            "extensions": [".mb"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
-            "language": "mb",
+            "language": "musicbee",
             "scopeName": "source.musicbee",
             "path": "./syntaxes/mb.tmLanguage.json"
+        }],
+        "snippets": [{
+            "language": "musicbee",
+            "path": "./snippets/musicbee.jsonc"
         }]
     }
 }

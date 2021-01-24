@@ -1,0 +1,15 @@
+{
+  // Functions
+  "Comment": {
+    "prefix": "$noop",
+    "body": "\\$noop($1)"
+  },
+  "$if(if,then,else)": {
+    "prefix": "$if",
+    "body": "\\$if(${1:if,then,else})"
+  },
+  "$if2(a1,a2,a3,…)": {
+    "prefix": "$if2",
+    "body": "\\$if2($1)"
+  }
+}
