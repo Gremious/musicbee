@@ -44,11 +44,11 @@
     "body":"\\$Right(<${1:Tag}>)"
   },
   "$Upper(<Tag>)": {
-    "prefix": "$Lower",
+    "prefix": "$Upper",
     "body":"\\$Right(<${1:Tag}>)"
   },
   "$Pad(<Tag>, #)": {
-    "prefix": "$Lower",
+    "prefix": "$Pad",
     "body":"\\$Right(<${1:Tag}>)"
   },
   "$Replace(<Tag>, Search Value, Replace Value)": {
