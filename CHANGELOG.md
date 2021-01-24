@@ -18,3 +18,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ### Fixed
 
 - Images for VSCode extension *need* to have a http url to display, changed from relative path to raw url.
+  
+## [1.0.3]
+
+### Fixed
+
+- Chnage preview image to not show a fixed bug lol
