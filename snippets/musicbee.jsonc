@@ -1,15 +1,82 @@
 {
-  // Functions
-  "Comment": {
-    "prefix": "$noop",
-    "body": "\\$noop($1)"
+  "$Contains(<Tag>, Search Value)": {
+    "prefix": "$Contains",
+    "body": "\\$Contains(<${1:Tag}>, ${2:Search Value})"
   },
-  "$if(if,then,else)": {
-    "prefix": "$if",
-    "body": "\\$if(${1:if,then,else})"
+  "$Date(<Tag>, Format)": {
+    "prefix": "$Date",
+    "body": "\\$Date(<${1:Tag}>, ${2:yyyy-MM-dd, hh:mm:ss})"
   },
-  "$if2(a1,a2,a3,…)": {
-    "prefix": "$if2",
-    "body": "\\$if2($1)"
+  "$First(<Tag>)": {
+    "prefix": "$First",
+    "body": "\\$First(<${1:Tag}>)"
+  },
+  "$Group(<Tag>, #)": {
+    "prefix": "$Group",
+    "body": "\\$Group(<${1:Tag}>, ${2:#})"
+  },
+  "$If(Criteria, True Result, False Result)": {
+    "prefix": "$If",
+    "body": "\\$If(${1:Criteria}, ${2:True Result}, ${3:False Result})"
+  },
+  "$And(Criteria, True Result, False Result)": {
+    "prefix": "$And",
+    "body": "\\$And(${1:Criteria 1}, ${2:Criteria 2})"
+  },
+  "$Or(Criteria, True Result, False Result)": {
+    "prefix": "$Or",
+    "body": "\\$Or(${1:Criteria 1}, ${2:Criteria 2})"
+  },
+  "IsNull(<Tag>, True Result, False Result)": {
+    "prefix": "$IsNull",
+    "body":"\\$IsNull(<${1:Tag}>, ${2:True Result}, ${3:False Result})"
+  },
+  "$Left(<Tag>, #)": {
+    "prefix": "$Left",
+    "body":"\\$Left(<${1:Tag}>, ${2:#})"
+  },
+  "$Right(<Tag>, #)": {
+    "prefix": "$Right",
+    "body":"\\$Right(<${1:Tag}>, ${2:#})"
+  },
+  "$Lower(<Tag>)": {
+    "prefix": "$Lower",
+    "body":"\\$Right(<${1:Tag}>)"
+  },
+  "$Upper(<Tag>)": {
+    "prefix": "$Lower",
+    "body":"\\$Right(<${1:Tag}>)"
+  },
+  "$Pad(<Tag>, #)": {
+    "prefix": "$Lower",
+    "body":"\\$Right(<${1:Tag}>)"
+  },
+  "$Replace(<Tag>, Search Value, Replace Value)": {
+    "prefix": "$Replace",
+    "body":"\\$Replace(<${1:Tag}>, ${2:Search Value}, ${3:Replace Value})"
+  },
+  "$RxReplace(<Tag>, Search Value, Replace Value)": {
+    "prefix": "$RxReplace",
+    "body":"\\$RxReplace(<${1:Tag}>, ${2:Search Value}, ${3:Replace Value})"
+  },
+  "$Sort(<Tag>)": {
+    "prefix": "$Sort",
+    "body":"\\$Sort(<${1:Tag}>)"
+  },
+  "$Split(<Tag>, Split Value, #)": {
+    "prefix": "$Split",
+    "body":"\\$Split(<${1:Tag}>, ${2:Split Value}, ${3:#})"
+  },
+  "$RSplit(<Tag>, Split Value, #)": {
+    "prefix": "$RSplit",
+    "body":"\\$RSplit(<${1:Tag}>, ${2:Split Value}, ${3:#})"
+  },
+  "$RxSplit(<Tag>, Split Value, #)": {
+    "prefix": "$RxSplit",
+    "body":"\\$RxSplit(<${1:Tag}>, ${2:Split Value}, ${3:#})"
+  },
+  "$Trim(<Tag>)": {
+    "prefix": "$Trim",
+    "body":"\\$Trim(<${1:Tag}>)"
   }
 }
