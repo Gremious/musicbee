@@ -21,7 +21,7 @@
 		{
 			"comment": "Text",
 			"name": "keyword.musicbee",
-			"match":"(?<=\\(|, |,)[\\w\\s]+"
+			"match":"(?<=\\(|,)[\\w\\s]+|[\\n\\w]+"
 		}
 	],
 	"repository": {
