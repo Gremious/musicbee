@@ -14,13 +14,14 @@ $IsNull(<Type>,
             Mixtapes)
             ,)
          $If($Contains(<Type>,Live)="T",
-         $If($Contains(<Type>,Album)="T","Live Albums",Live),)
+            $If($Contains(<Type>,Album)="T","Live Albums",Live),)
          $If($Contains(<Type>,Soundtrack)="T",$If($Contains(<Type>,Remix)="T",
-         $If($Contains(<Type>,Album)="T","Soundtrack Remix Albums",),
-         $If($Contains(<Type>,Album)="T","Soundtrack Albums",)),)
+            $If($Contains(<Type>,Album)="T","Soundtrack Remix Albums",),
+            $If($Contains(<Type>,Album)="T","Soundtrack Albums",)),)
          $If($Contains(<Type>,Compilation)="T",
-         $If($Contains(<Type>,Album)="T","Compilation Albums",
-         $If($Contains(<Type>,EP)="T","Compilation EPs"," Compilations")),)
+            $If($Contains(<Type>,Album)="T","Compilation Albums",
+                $If($Contains(<Type>,EP)="T","Compilation EPs"," Compilations")),
+            )
          $If($Contains(<Type>,Compilation)="F",$If($Contains(<Type>,Live)="F",
             $If($Contains(<Type>,Mixtape)="F",$If($Contains(<Type>,Remix)="F",
             $If($Contains(<Type>,Soundtrack)="F",
