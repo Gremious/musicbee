@@ -1,0 +1,25 @@
+{
+    "name": "musicbee-formula-syntax-highlighting",
+    "displayName": "MusicBee Tag Formulas Syntax Highlighting",
+    "description": "Syntax highlighting support for the MusicBee Tag Formulas/Functions.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.52.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "mb",
+            "aliases": ["MusicBee Formula", "mb", "MusicBee Tagger Script"],
+            "extensions": [".mbf"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "mb",
+            "scopeName": "source.musicbee",
+            "path": "./syntaxes/mb.tmLanguage.json"
+        }]
+    }
+}

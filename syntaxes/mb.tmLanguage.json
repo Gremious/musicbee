@@ -1,0 +1,25 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "MusicBee Formula",
+	"scopeName": "source.musicbee",
+	"patterns": [
+		{
+			"comment": "Variables",
+			"name": "variable.musicbee",
+			"match": "<[_a-zA-Z0-9:]*>"
+		}
+	],
+	"repository": {
+		"strings": {
+			"name": "string.quoted.double.mb",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.mb",
+					"match": "\\\\."
+				}
+			]
+		}
+	}
+}
