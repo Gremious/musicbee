@@ -6,7 +6,7 @@
 		{
 			"comment": "Tag",
 			"name": "variable.musicbee",
-			"match": "<[\\w\\s]+>"
+			"match": "<.*?>"
 		},
 		{
 			"comment": "Function",

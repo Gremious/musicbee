@@ -2,7 +2,7 @@
     "name": "musicbee-formula-syntax-highlighting",
     "displayName": "MusicBee Tag Formulas Syntax Highlighting",
     "description": "Syntax highlighting support for the MusicBee Tag Formulas/Functions.",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "publisher": "gremious",
     "repository": "https://github.com/Gremious/musicbee-formula-syntax-highlighting",
     "icon": "icon.png",

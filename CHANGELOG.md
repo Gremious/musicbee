@@ -23,4 +23,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ### Fixed
 
-- Chnage preview image to not show a fixed bug lol
+- Change preview image to not show a fixed bug lol
+
+## [1.0.4]
+
+### Fixed
+
+- Match *everything* between `<>` so that it highlights `<Year (yyyy)>`
