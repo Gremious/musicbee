@@ -5,8 +5,8 @@ $IsNull(<Type>,
         ,)
     $If($Contains(<Type>,Remix)="T",
         $If($Contains(<Type>,Album)="T",
-            $If($Contains(<Type>,Album)="F","Remix Album",)
-            ,Remixes)
+            $If($Contains(<Type>,Album)="F","Remix Album",),
+            Remixes)
     ,)
     $If($Contains(<Type>,Mixtape)="T"
         ,$If($Contains(<Type>,Album)="T",
