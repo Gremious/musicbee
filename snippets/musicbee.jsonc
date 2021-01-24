@@ -57,7 +57,7 @@
   },
   "$RxReplace(<Tag>, Search Value, Replace Value)": {
     "prefix": "$RxReplace",
-    "body":"\\$RxReplace(<${1:Tag}>, ${2:Search Value}, ${3:Replace Value})"
+    "body":"\\$RxReplace(<${1:Tag}>, \"${2:Search Value}\", ${3:Replace Value})"
   },
   "$Sort(<Tag>)": {
     "prefix": "$Sort",
@@ -73,7 +73,7 @@
   },
   "$RxSplit(<Tag>, Split Value, #)": {
     "prefix": "$RxSplit",
-    "body":"\\$RxSplit(<${1:Tag}>, ${2:Split Value}, ${3:#})"
+    "body":"\\$RxSplit(<${1:Tag}>, \"${2:Split Value}\", ${3:#})"
   },
   "$Trim(<Tag>)": {
     "prefix": "$Trim",
