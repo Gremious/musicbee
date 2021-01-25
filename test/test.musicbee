@@ -1,4 +1,5 @@
 <MetaGenrePath>\<MetaArtistPath>\<VirtualTypePath>\$IsNull(<Album>,<Title>,<Album>) (<Year (yyyy)>)\<Track#>. <Title>
+
 $IsNull(<Type>,
     Unspecified,
     $If($Contains(<Type>,Mix)="T",

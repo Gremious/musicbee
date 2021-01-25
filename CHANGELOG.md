@@ -30,3 +30,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ### Fixed
 
 - Match *everything* between `<>` so that it highlights `<Year (yyyy)>`
+
+## [1.0.5]
+
+### Fixed
+
+- Change preview image for the same reason *again*
